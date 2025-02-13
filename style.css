@@ -1,0 +1,415 @@
+@font-face {
+    font-family: "Oswald-SemiBold";
+    src: url(./fonts/Oswald-SemiBold.ttf);
+}
+@font-face {
+    font-family: "Nunito-Sans-ExtraBold";
+    src: url(./fonts/NunitoSans_10pt-ExtraBold.ttf);
+}
+@font-face {
+    font-family: "Nunito-Sans-SemiBold";
+    src: url(./fonts/NunitoSans_10pt-SemiBold.ttf);
+}
+@font-face {
+    font-family: "Monterstat-SemiBold";
+    src: url(./fonts/Montserrat-SemiBold.ttf);
+}
+@font-face {
+    font-family: "Monterstat-Regular";
+    src: url(./fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+    font-family: "Monterstat-Medium";
+    src: url(./fonts/Montserrat-Medium.ttf);
+}
+@font-face {
+    font-family: "Nunito-Sans-Regular";
+    src: url(./fonts/NunitoSans_10pt-Regular.ttf);
+}
+@font-face {
+    font-family: "Nunito-Sans-Bold";
+    src: url(./fonts/NunitoSans_10pt-Bold.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.header {
+    background-color: #E06E2E;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 70px;
+    color: #fff;
+}
+
+.header__logo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 7px;
+}
+
+.header__logo-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.header__logo-subtitle {
+    font-size: 15px;
+    font-family: "Nunito-Sans-ExtraBold";
+}
+
+.header__logo-title {
+    font-size: 28px;
+    font-family: "Oswald-SemiBold";
+    letter-spacing: 3%;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-evenly;
+    width: 35%;
+    font-size: 10px;
+    font-family: "Nunito-Sans-ExtraBold";
+}
+
+.header__nav-link {
+    color: #fff;
+    font-size: 14px;
+}
+
+.header__contacts {
+    font-family: "Nunito-Sans-SemiBold";
+    font-size: 15px;
+}
+
+.header__contacts-email {
+    float: right;
+}
+
+.promo {
+    height: 768px;
+    background-image: url(./img/Group\ 37.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.promo__container {
+    width: 100%;
+    text-align: center;
+}
+
+.promo__title {
+    font-size: 64px;
+    font-family: "Monterstat-SemiBold";
+}
+
+.promo__subtitle {
+    font-size: 32px;
+    font-family: "Monterstat-Regular";
+    line-height: 76px;
+}
+
+.promo__button {
+    width: 15%;
+    background-color: #0671E0;
+    cursor: pointer;
+    padding: 11px 0;
+    font-size: 22px;
+    font-family: "Monterstat-SemiBold";
+    border: none;
+    color: #fff;
+    border-radius: 8px;
+    margin-top: 64px;
+}
+
+.tours {
+    margin-top: 80px;
+}
+
+.tours__container {
+    text-align: center;
+}
+
+.tours__list {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 19px;
+    flex-wrap: wrap;
+    margin-top: 48px;
+    margin-bottom: 80px;
+}
+
+.tours__item {
+    max-width: 293px;
+    border-radius: 16px;
+    box-shadow: 2px 5px 7px 1px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.tours__info {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.tours__name {
+    font-family: "Monterstat-SemiBold";
+    font-size: 20px;
+}
+
+.tours__price, 
+.tours__location {
+    font-family: "Nunito-Sans-Regular";
+    font-size: 16px;
+}
+
+.tours__title {
+    font-size: 36px;
+    font-family: "Monterstat-Medium";
+    color: #0065CE;
+}
+
+.advantages {
+    background-color: #F2F2F2;
+    padding: 81px 0 91px;
+}
+
+.advantages__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 58px;
+}
+
+.advantages__content {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.advantages__image img {
+    max-width: 474px;
+}
+
+.advantages__info {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.advantages__title {
+    color: #0671E0;
+    font-size: 36px;
+    font-family: "Monterstat-Medium";
+}
+
+.advantages__list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.advantages__item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    font-family: "Nunito-Sans-Regular";
+    font-size: 18px;
+}
+
+.advantages__stats {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+}
+
+.advantages__stat {
+    text-align: center;
+    background-color: #fff;
+    width: 172px;
+    border-radius: 6px;
+    box-shadow: 2px 5px 7px 1px rgba(0, 0, 0, 0.25);
+    padding: 24px;
+    font-family: "Monterstat-Medium";
+    color: #E06E2E;
+}
+
+.advantages__stat-text {
+    padding: 12px 0;
+    border-top: 1px solid #E06E2E;
+    border-bottom: 1px solid #E06E2E;
+}
+
+.advantages__stat-value {
+    font-family: "Nunito-Sans-Bold";
+    font-size: 24px;
+}
+
+.advantages__stat-text p {
+    font-family: "Nunito-Sans-Regular";
+    font-size: 13px;
+}
+
+.clients-photos {
+    font-family: "Monterstat-Medium";
+    color: #0065CE;
+    font-size: 36px;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 160px;
+}
+
+.clients-photos__title {
+    margin-bottom: 48px;
+}
+
+.clients-photos__gallery {
+    display: flex;
+    gap: 18px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.clients-photos__row {
+    display: flex;
+    gap: 18px;
+}
+
+.clients-photos__group {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.footer {
+    background-image: url(./img/Frame\ 88.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #E06E2E;
+    height: 156px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    text-align: center;
+}
+
+.footer__socials {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.footer__icon {
+    cursor: pointer;
+}
+
+.footer__privacy-policy {
+    color: #fff;
+    font-family: "Nunito-Sans-ExtraBold";
+    font-size: 14px;
+}
+
+@media (max-width:800px) {
+    .promo__subtitle p {
+        line-height: 42px;
+    }
+    .promo__button button {
+        width: 40%;
+    }
+    .clients-photos__row {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .header__logo svg {
+        height: 17px;
+        width: 17px;
+    }   
+    .header__logo-text p {
+        font-size: 4.46px;
+    }
+    .header__logo-text h1 {
+        font-size: 8.32px;
+    }
+    .header__nav {
+        justify-content: space-evenly;
+        width: 60%;
+        font-size: 5px;
+    }
+    .header__contacts {
+        font-size: 4.16px;
+    }
+    .header {
+        height: 20px;
+    }
+    .promo__button {
+        width: 40%;
+    }
+    .header__nav-link {
+        font-size: 8px;
+    }
+}
+@media (max-width:428px) {
+    .header__logo svg {
+        height: 17px;
+        width: 17px;
+    }   
+    .header__logo-text p {
+        font-size: 4.46px;
+    }
+    .header__logo-text h1 {
+        font-size: 8.32px;
+    }
+    .header__nav{
+        justify-content: space-evenly;
+        width: 60%;
+        font-size: 5px;
+    }
+    .header__contacts {
+        font-size: 4.16px;
+    }
+    .header {
+        height: 20px;
+    }
+    .advantages__title {
+        text-align: center;
+        align-items: center;
+    }
+    .advantages__image img {
+        max-width: 100%;
+    }
+    .clients-photos__row {
+        flex-direction: column;
+    }
+    .section-1-container-1-1 button {
+        width: 40%;
+    }
+}
